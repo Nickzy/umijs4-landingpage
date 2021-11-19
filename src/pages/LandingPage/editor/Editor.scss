@@ -1,0 +1,9 @@
+@import '../../../../global.scss';
+.editor_s_w {
+    position: relative;
+    @include flex-def();
+    @include flex-zTopBottom();
+    height: 100%;
+    overflow: hidden;
+    // height: calc(100% - 50px) ;
+}

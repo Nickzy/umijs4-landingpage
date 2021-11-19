@@ -1,0 +1,132 @@
+@import '../../../../../global.scss';
+.landing_page_header_wrap {
+    width: 100%;
+    height: 50px;
+    padding: 0 20px;
+    background: #ffffff;
+    border-bottom: 2px solid #eef1f5;
+    flex-shrink: 0;
+    @include flex-def();
+    @include flex-zBetween();
+    @include flex-cCenter();
+    .color_select_m {
+        position: relative;
+        @include flex-def();
+        @include flex-cCenter();
+        margin: 0 20px;
+        cursor: pointer;
+        .color_show {
+            i {
+                margin-right: 5px;
+            }
+        }
+        .color_picker_wrap_s {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            top: 30px;
+            z-index: 1010;
+        }
+    }
+    .right {
+        @include flex-def();
+        @include flex-cCenter();
+        .time {
+            margin-right: 12px;
+        }
+        .save {
+            margin-right: 12px;
+        }
+        .preview {
+            @include flex-def();
+            @include flex-cCenter();
+            margin-right: 18px;
+            cursor: pointer;
+            i {
+                margin-right: 6px;
+            }
+        }
+    }
+}
+.ant_modal_editor_headerselfstyle {
+    // width: 23.3%!important;
+    .ant-modal-header {
+        padding: 10px 15px 10px 20px;
+        background: #f5f5f5;
+        border-bottom: 0;
+    }
+    .ant-modal-content {
+        border-radius: $border-radius-base;
+        .ant-modal-footer {
+            text-align: center;
+            padding-bottom: 20px;
+            border-top: 0;
+            .ant-btn {
+                border-radius: $border-radius-base;
+                height: 28px;
+            }
+        }
+    }
+    .ant-modal-close-x {
+        line-height: 40px;
+        height: 40px;
+        width: 44px;
+    }
+    .form_w {
+        >div {
+            @include flex-def();
+            @include flex-cCenter();
+            width: 100%;
+            padding-bottom: 10px;
+            .lable_s {
+                min-width: 80px;
+                flex-shrink: 0;
+                // margin-right: 13px;
+                .lable_s_con {
+                    min-width: 80px;
+                }
+            }
+            .input_s_w {
+                position: relative;
+                width: 100%;
+                .notify {
+                    position: absolute;
+                    top: 36px;
+                    left: 0;
+                    right: 0;
+                }
+            }
+        }
+        .note {
+            >div {
+                width: 100%;
+                @include flex-def();
+                @include flex-zBetween();
+            }
+            .danger_notify {
+                color: $themeRed;
+            }
+            .blue {
+                color: $themePrimary;
+                cursor: pointer;
+            }
+        }
+        .gaoji_select {
+            @include flex-zTopBottom();
+            >div {
+                @include flex-def();
+                width: 100%;
+                margin-bottom: 10px;
+                >div {
+                    width: 100%;
+                    @include flex-def();
+                    @include flex-cCenter();
+                    .lable_s_l {
+                        flex-shrink: 0;
+                        min-width: 157px;
+                    }
+                }
+            }
+        }
+    }
+}

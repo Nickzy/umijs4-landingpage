@@ -1,0 +1,69 @@
+@import '../../../../global.scss';
+.Preview_s_w {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: $background-color;
+    z-index: 1100;
+    @include flex-def();
+    @include flex-zTopBottom();
+    header {
+        @include flex-def();
+        padding: 10px 14px;
+        background: #ffffff;
+        @include flex-zBetween();
+        flex-shrink: 0;
+        font-size: 16px;
+        color: $heading-color;
+        font-weight: 800;
+        .iconjiantou-left {
+            margin-right: 7px;
+        }
+        .close {
+            cursor: pointer;
+        }
+        i {
+            cursor: pointer;
+        }
+    }
+    >.content {
+        position: relative;
+        width: 100%;
+        height: 100%; 
+        overflow: hidden;
+        @include flex-def();
+        @include flex-zCenter();
+        @include flex-cCenter();
+        // padding-top: 18px;
+        padding: 0 30px;
+        .landing_page_canvas_wrap .content_item {
+            margin: 0;
+        }
+        .pc {
+            // max-width: 80% ;
+            width: 100%;
+            height: 80%;
+            overflow: hidden;
+            overflow-y: auto;
+            @include scrollBar();
+            margin-right: 60px;
+            border-radius: 10px;
+            border: 14px solid #D8D8D8;
+        }
+        .mobile {
+            width: 409px;
+            flex-shrink: 0;
+            height: 80%;
+            overflow: hidden;
+            overflow-y: auto;
+            @include scrollBar();
+            border-radius: 24px;
+            border: 14px solid #D8D8D8;
+            p {
+                text-align: center;
+            }
+        }
+    }
+}

@@ -1,0 +1,10 @@
+@import '../../global.scss';
+.ScrollCarouselAnimate_wrap {
+    height: 100%;
+    overflow: auto;
+    @include hideScrollBar();
+    .ScrollCarousel{
+        // -webkit-transform-style:preserve-3d;
+        // -webkit-backface-visibility:hidden;
+    }
+}
