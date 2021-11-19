@@ -16,6 +16,7 @@ function IndexPage() {
       <h4>{formatMessage({ id: "welcome.h3" })}</h4>
       <DEMO3 />
       <DEMO />
+      a
     </div>
   );
 }
